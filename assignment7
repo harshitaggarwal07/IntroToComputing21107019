@@ -1,10 +1,8 @@
 #question 1
 # import all functions/classes from the tkinter
 from tkinter import *
-
 # Function for finding GST rate
 def findGst() :
-
 	# take a value from the respective entry boxes
 	# get method returns current text as string
 	org_cost= int(org_priceField.get())
@@ -16,22 +14,16 @@ def findGst() :
 
 	# insert method inserting the
 	# value in the text entry box.
-	gst_rateField.insert(10, str(gst_rate) + " % ")
-	
-	
+	gst_rateField.insert(10, str(gst_rate) + " % ")	
 # Function for clearing the
 # contents of all text entry boxes
 def clearAll():
-	
-	
 	# deleting the content from the entry box
 	org_priceField.delete(0, END)
 	
 	net_priceField.delete(0, END)
 	
 	gst_rateField.delete(0, END)
-	
-
 # Driver Code
 if __name__ == "__main__" :
 
@@ -113,10 +105,8 @@ if __name__ == "__main__" :
 #question2
 	# import all methods and classes from the tkinter
 from tkinter import *
-
 # import calendar module
 import calendar
-
 # Function for showing the calendar of the given year
 def showCal() :
 
@@ -198,11 +188,10 @@ if __name__ == "__main__" :
 	
 	# start the GUI
 	gui.mainloop()
-	
-#question 3
 
-# Python program to create a simple GUI
-# calculator using Tkinter
+
+
+#question 3
 
 # import everything from tkinter module
 from tkinter import *
@@ -365,10 +354,10 @@ if __name__ == "__main__":
 	gui.mainloop()
 	
 	
+	
 #question 4
 
 # MergeSort in Python
-
 
 def mergeSort(array):
     if len(array) > 1:
@@ -425,10 +414,10 @@ if __name__ == '__main__':
     printList(array)
     
     
+    
 #question5 
 
 #5a
-
 def partition(l, r, nums):
     # Last element will be the pivot and the first element the pointer
     pivot, ptr = nums[r], l
@@ -557,6 +546,3 @@ size = len(list3)
 selectionSort(list3, size)
 print('Sorted Array in Ascending Order by Selection sort:')
 print(list3)
-	
-
-
